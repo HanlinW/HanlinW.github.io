@@ -1,0 +1,119 @@
+html, body, .modal-bg {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+}
+.modal-bg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	background: #48525e;
+	opacity: 0.4;
+	z-index: 10;
+}
+.modal{
+	position: relative;
+	z-index: 99;
+	opacity: 1;
+	top: 15%;
+	left: 40%;
+	width: 600px;
+	height: 400px;
+}
+.modal .title .tips-bg{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background: #48525e;
+	width: 100%;
+	height: 50px;
+	opacity: 0.8;
+}
+.modal .title .tips{
+	position: absolute;
+	bottom: 13px;
+	left: 10px;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 20px;
+}
+.modal .title .close{
+	background: url(image/close.png) no-repeat;
+	background-size: 27px 27px;
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.modal .title .close:hover{
+	cursor: pointer;
+}
+.container{
+	position: absolute;
+	top: 200px;
+	text-align: center;
+	width: 100%;
+	z-index: 5;
+}
+.image-list{
+	width:420px;
+	margin-left: 40%;
+	position: relative;
+}
+#prev{
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	float: left;
+	width: 45px;
+	height: 50px;
+	background: url(image/left.png);
+	background-size: 45px 50px;
+}
+#next{
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	width: 45px;
+	height: 50px;
+	background: url(image/right.png);
+	background-size: 45px 50px;
+}
+#prev:hover,#next:hover{
+	cursor: pointer;
+}
+.thumb-a{
+	display:inline-block;
+	padding:4px;
+	margin:0 0.5rem 1rem 0.5rem 1rem;
+	line-height:0;
+	-webkit-transition:background-color 0.1s ease-out;
+	-moz-transition:background-color 0.1s ease-out;
+	-o-transition:background-color 0.1s ease-out;
+	transition:background-color 0.1s ease-out;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	-ms-border-radius:6px;
+	-o-border-radius:6px;
+	border-radius:6px
+}
+.thumb-a:hover{
+	background-color:#4ae;
+	cursor: pointer;
+}
+.thumb-a-hide{
+	display: none;
+}
+.thumb-img{
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px
+}
